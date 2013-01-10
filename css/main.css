@@ -1,0 +1,224 @@
+/*** MAIN STYLE ***/
+
+body {
+	padding: 20px 0;
+	margin: 0; 
+	font-family: Verdana, Tahoma, arial, sans-serif;
+	background: #1a1a1a;
+	font-size: 12px;
+}
+
+img {
+	border: 0;
+}
+
+h1 {
+	padding: 10px 0 30px 10px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+a {
+	color: #374a5e;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	padding: 0 10px;
+}
+
+ul,
+li {
+	list-style: none outside none;
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	background-color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	margin: 10px auto;
+	padding: 10px 0;
+	width: 960px;
+}
+
+/* --- NAVIGATION --- */
+
+#topNavigation {
+	margin: 0 0 10px 0;
+	float: left;
+	width: 100%;
+	border:1px solid #000;
+	border-left: 0;
+	border-right: 0;
+	padding: 0;
+}
+
+#topNavigation  ul {
+}
+
+#topNavigation ul li.level1,
+#topNavigation ul li a.level1 {
+    border-right: 1px solid #000000;
+    float: left;
+    text-align: center;
+    width: 159px;
+}
+
+#topNavigation ul li.level1 {
+	position: relative;
+	background-image: url(../images/sprite_nav.jpg);
+}
+
+#topNavigation ul li a.level1 {
+	padding: 10px 0;
+	text-decoration: none;
+}
+
+#topNavigation ul.level2,
+#topNavigation ul.level3 {
+	left: -999em;
+	position: absolute;
+	top: 35px;
+	background-color: #8b8b8b;
+	border: 1px solid #000;
+	border-top: 0;
+}
+
+#topNavigation ul.level3 {
+	top: 0;
+}
+
+#topNavigation ul li:hover {
+	background-position: bottom left;
+}
+
+#topNavigation ul li:hover a {
+	color: #fff;
+}
+
+#topNavigation ul li.level1:hover ul.level2 {
+	left: 0;
+}
+
+#topNavigation ul li.level1 ul.level2 li:hover ul.level3 {
+	left: 158px;
+}
+
+#topNavigation ul.level2 a {
+    float: left;
+    padding: 10px 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 114px;
+	border-bottom: 1px dotted #ccc;
+}
+
+#topNavigation ul.level2 a:hover {
+	background-color: #667a91;
+}
+
+#topNavigation ul.level2 a.last {
+	border: 0;
+}
+
+/* --- CONTENT --- */
+
+#content {
+	margin: 10px 40px;
+	overflow: hidden;
+}
+
+ul#arrows {
+	overflow: hidden;
+}
+
+ul#arrows li {	
+	background: transparent url(../images/sprite_arrows.png) top right no-repeat;
+	float: left;
+	height: 40px;
+	width: 25%;
+}
+
+.column {
+	display: inline-block;
+	width: 50%;
+}
+
+/* --- CARROUSEL -- */
+
+#carrousel {
+    border: 1px solid #000000;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 878px;
+}
+
+#carrousel,
+#carrousel .arrow,
+#carrousel ul li.slide {
+	height: 150px;
+}
+
+#carrousel .arrow {
+	background: transparent url(../images/sprite_carrousel_arrows.png) top left no-repeat;
+	width: 40px;
+}
+
+#carrousel .arrow.right {
+	background-position: bottom left;
+}
+
+#carrousel ul {
+	position: absolute;
+}
+
+#carrousel ul li.slide {
+	float: left;	
+	width: 220px;
+}
+
+#carrousel ul li.slide {
+	background-position: center;
+	background-color: red;
+}
+
+.slide1 {
+	background-image: url(../images/slide1.jpg);	
+}
+
+.slide2 {
+	background-image: url(../images/slide2.jpg);
+}
+
+.slide3 {
+	background-image: url(../images/slide3.jpg);	
+}
+
+.slide4 {
+	background-image: url(../images/slide4.jpg);	
+}
+
+.slide5 {
+	background-image: url(../images/slide5.jpg);	
+}
+
+.slide6 {
+	background-image: url(../images/slide6.jpg);
+}
+
+
+/* --- FOOTER --- */
+#footer {
+	text-align: center;
+	padding: 4px 0;
+	border: 1px solid #ccc;
+}
+
+#footer a {
+	padding: 0 10px;
+}
