@@ -10,6 +10,9 @@ body {
 
 img {
 	border: 0;
+}
+
+#body_bg img {
 	max-width: 100%;
 }
 
@@ -147,6 +150,14 @@ ul#arrows li {
 .column {
 	display: inline-block;
 	width: 50%;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
 }
 
 /* --- CARROUSEL -- */
